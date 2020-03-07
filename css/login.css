@@ -1,0 +1,516 @@
+* {
+  font-size: 18px;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: #f2f3ef;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
+}
+
+.navigation-sm {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  background: #fefefe;
+}
+
+.navbar.navbar-expand-lg {
+  background: #fefefe;
+}
+
+.title {
+  position: block;
+  font-family: "Lato", sans-serif;
+  color: #339900;
+  text-align: center;
+}
+
+.hamburger,
+.start-search,
+.exit-menu {
+  display: block;
+  background: none;
+  width: 40px;
+  height: 40px;
+  color: #3a3a3a;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.hamburger,
+.start-search {
+  display: block;
+  background: none;
+  z-index: 2;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+}
+
+.start-search {
+  font-size: 2.7em;
+  transform: rotateX(180deg);
+}
+
+.exit-menu {
+  border: 0;
+  font-size: 3em;
+  line-height: 60px;
+  z-index: 4;
+}
+
+.menu {
+  display: block;
+  position: absolute;
+  background: #fff;
+  z-index: 2;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.menu li {
+  display: block;
+  padding: 15px 0 15px 10px;
+  border-bottom: #cccccc 1px solid;
+  text-align: left;
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+.menu .donate {
+  color: #339900;
+}
+
+/* ****************************************** FORMS */
+.form-group {
+  font-family: "Lato", sans-serif;
+}
+
+.login-container {
+  margin-top: 150px;
+}
+
+.myform {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1.1rem;
+  outline: 0;
+  max-width: 500px;
+  margin: auto;
+}
+
+.brand-name {
+  font-family: "Lato", sans-serif;
+  color: #339900;
+  font-size: 1.7rem;
+}
+
+.tx-tfm {
+  text-transform: uppercase;
+}
+
+.mybtn {
+  border-radius: 50px;
+}
+
+.text-center {
+  padding: 30px;
+}
+
+.custom-control.custom-checkbox {
+  font-family: "Lato", sans-serif;
+  color: #999999;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #339900;
+}
+
+.custom-control-input:active ~ .custom-control-label::before {
+  background-color: green;
+}
+
+/** focus shadow **/
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #33990033;
+}
+
+.btn.btn-block.mybtn.btn-primary.tx-tfm {
+  background: #fff;
+  border: 1px solid #339900;
+  color: #339900;
+}
+
+.btn.btn-block.mybtn.btn-primary.tx-tfm:hover {
+  background-color: #339900;
+  color: #fff;
+}
+
+#signup {
+  color: #339900;
+}
+
+/* ****************************************** MOBILE */
+@media (max-width: 375px) {
+  /* ****************************************** NAVIGATION */
+  .navigation-sm {
+    padding: 15px;
+    background-color: #fff;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .hamburger,
+  .start-search {
+    font-size: 1.4em;
+  }
+
+  .exit-menu {
+    font-size: 3em;
+  }
+
+  .menu {
+    top: 73px;
+    width: 80%;
+  }
+
+  .menu li {
+    padding: 15px 0 15px 40px;
+    font-size: 1rem;
+  }
+
+  /* ****************************************** FORM */
+  .login-container {
+    margin: 25% auto 0 auto;
+    width: 80%;
+  }
+
+  .have-account .text-center #signup,
+  .have-account .text-center {
+    font-family: "Lato", sans-serif;
+    font-size: 0.75rem;
+  }
+}
+
+/* ****************************************** IPAD */
+@media (min-width: 376px) {
+  /* ****************************************** NAVIGATION */
+  .navigation-sm {
+    padding: 15px;
+    background-color: #fff;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .hamburger,
+  .start-search {
+    font-size: 1.4em;
+  }
+
+  .exit-menu {
+    font-size: 3em;
+  }
+
+  .menu {
+    top: 73px;
+    width: 80%;
+  }
+
+  .menu li {
+    padding: 15px 0 15px 40px;
+    font-size: 1rem;
+  }
+
+  /* ****************************************** FORM */
+  .login-container {
+    margin: 25% auto 0 -25%;
+    width: 150%;
+  }
+
+  .have-account .text-center #signup,
+  .have-account .text-center {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+  }
+}
+
+/* ************************************************************************************************************** */
+@media (min-width: 769px) {
+  /* ****************************************** NAVIGATION */
+  .title {
+    position: block;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    color: #339900;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .navbar {
+    background: #fefefe;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 35px;
+    max-width: 100vw;
+  }
+
+  nav .subbg {
+    width: 100vw;
+    height: 100px;
+    background: #fefefe;
+    margin: 140px -500px 0 -500px;
+  }
+
+  .nav-item .nav-link.nav-stu,
+  .nav-item .nav-link.nav-edu,
+  .nav-item .nav-link.nav-about-us {
+    padding: 5px 20px;
+    font-size: 0.8rem;
+  }
+
+  .nav-item .nav-link.nav-stu {
+    cursor: default;
+    color: #999999;
+  }
+
+  .nav-link {
+    font-weight: bold;
+    color: #999999;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    height: 35px;
+    padding: 5px 0;
+    font-family: "Lato", sans-serif;
+    font-size: 0.8rem;
+    font-weight: lighter;
+  }
+
+  .navbar-nav.mr-auto {
+    height: 35px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .active {
+    color: #339900 !important;
+    border-bottom: 2px solid #339900;
+  }
+
+  .nav-item .nav-link.form.login,
+  .nav-item .nav-link.form.signup {
+    padding: 5px 20px;
+  }
+
+  .nav-link.form {
+    color: #3a3a3a;
+  }
+
+  a.nav-link.signup {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-nav.mr-auto {
+    padding-left: 100px;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    top: 3rem;
+    left: 7.55rem;
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #339900;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .mx-auto.go-to-search {
+    position: absolute;
+    top: 4rem;
+    right: 13.25rem;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    color: #999999;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .iconify.go-to-search {
+    top: 4.75rem;
+    right: 17rem;
+    position: absolute;
+    color: #999999;
+  }
+
+  .mx-auto.donate {
+    position: absolute;
+    top: 4.15rem;
+    right: 7rem;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    color: #339900;
+    text-align: center;
+    font-weight: lighter;
+    padding: 5px 10px 5px 10px;
+    border: #339900 solid 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .navbar-nav.ml-auto {
+    padding-right: 110px;
+  }
+
+  a:hover {
+    color: #3a3a3a;
+  }
+
+  .navbar-brand:hover {
+    color: #339900;
+  }
+
+  /* ****************************************** FORM */
+  .login-container {
+    margin: 200px auto;
+    width: 100%;
+  }
+
+  .have-account .text-center #signup,
+  .have-account .text-center {
+    font-family: "Lato", sans-serif;
+    font-size: 0.75rem;
+  }
+
+  /* ****************************************** FOOTER */
+  footer {
+    background-color: #fefefe;
+    padding: 80px 0;
+    margin: auto;
+  }
+
+  footer .branding {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+  }
+
+  footer .brand-name {
+    margin: 20px 0 20px 0;
+    padding-left: 20px;
+    font-size: 2rem;
+    color: #339900;
+  }
+
+  .img-circle {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .brand-info {
+    text-align: left;
+    width: 250px;
+    margin-bottom: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #999999;
+  }
+
+  footer .contact-link {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+  }
+
+  footer .footer-content {
+    list-style: none;
+    margin-top: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #999999;
+    font-size: 1rem;
+  }
+
+  footer .footer-content a {
+    color: #3a3a3a;
+  }
+
+  footer .footer-content .donate {
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #339900;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-social ul {
+    padding-left: 0;
+  }
+
+  footer .footer-social ul li {
+    list-style: none;
+    float: left;
+    padding: 0 10px;
+  }
+
+  footer .footer-social ul li:first-child {
+    padding-left: 0;
+  }
+
+  footer .footer-social ul li a {
+    font-size: 20px;
+    color: #333;
+  }
+
+  footer .footer-social ul li a:hover {
+    color: #339900;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+}
