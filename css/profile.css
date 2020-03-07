@@ -10,7 +10,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background: #f2f3ef;
+  background: #fefefe;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -110,6 +110,93 @@ h5 {
   border-bottom: 2px solid #339900;
 }
 
+
+.card-body .nav-tabs .nav-link {
+  color: #3a3a3a
+}
+
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-container:hover .image {
+  opacity: 0.3;
+}
+
+.image-container:hover .middle {
+  opacity: 1;
+}
+
+.profile-sub,
+.profile-info {
+  margin: auto;
+  width: 100%;
+  text-align: left;
+}
+
+.profile-sub h1 {
+  color: #3a3a3a;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.profile-info {
+  font-size: 0.9rem;
+  color: #535353
+}
+
+.profile-info {
+  font-weight: normal;
+}
+
+.profile-sub.follow h1 {
+  color: #535353;
+  font-size: 0.75rem;
+}
+
+.profile-info.follow {
+  font-size: 0.7rem;
+}
+
+.user-name h1 {
+  margin: 10px auto;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.text-center h6 {
+  color: #3a3a3a;
+  font-family: "Lato", sans-serif;
+  margin: 10px auto
+}
+
+
+.inz .tab-content label {
+  color: #3a3a3a
+}
+
 /* ****************************************** MOBILE */
 @media (max-width: 375px) {
 
@@ -146,157 +233,6 @@ h5 {
   .menu li {
     padding: 15px 0 15px 40px;
     font-size: 1rem;
-  }
-
-  /* ****************************************** HERO */
-  .heads {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .bgimage {
-    width: 100%;
-    height: 260px;
-    background: #2c5095;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #2c5095 0%, #4e648e 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #2c5095 0%, #4e648e 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #2c5095 0%, #4e648e 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c5095', endColorstr='#4e648e', GradientType=0);
-    /* IE6-9 */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .over-img {
-    margin: -220px auto 0 auto;
-    width: 85%;
-    height: 250px;
-  }
-
-  .heads-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: #ccc;
-    width: 85%;
-    margin: auto;
-  }
-
-
-  .heads-level,
-  .heads-subject {
-    font-size: 0.9rem;
-    margin: auto;
-    text-align: center;
-    padding: 5px;
-  }
-
-
-
-  /* ****************************************** LOWER-INFO */
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 50%;
-    margin: 30px auto 50px auto;
-  }
-
-  .projects-header {
-    padding: 0;
-    margin: auto;
-    font-size: 1.28rem;
-    text-transform: uppercase;
-  }
-
-  .projects-found {
-    padding: 0;
-    margin: auto auto 3px auto;
-    font-size: 0.75rem;
-  }
-
-  .project-title {
-    margin: 10px auto;
-    font-size: 0.8rem;
-    text-align: center;
-  }
-
-  .project-thumbs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    padding: 10px
-  }
-
-  .project-thumbs img {
-    width: 30%;
-  }
-
-  .thumbs-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .thumb-nav-item {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #fff;
-    border: 1px solid #3a3a3a;
-    margin: 10px 2.5px
-  }
-
-  .thumb-nav-item.active {
-    border: none;
-    background: #339900;
-    width: 10px;
-    height: 10px;
-    margin: 9.275px 2.5px
-  }
-
-  .descript-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 400px;
-    height: 300px;
-    margin: 0 auto 40px auto;
-  }
-
-  .proj-descript-title {
-    font-size: 1.5rem;
-    margin: auto;
-    text-align: left;
-    margin: 20px 50px 30px 50px;
-  }
-
-  .descript-sub {
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-align: left;
-    margin: auto 50px;
-  }
-
-  .proj-descript {
-    font-size: 0.7rem;
-    margin: 0 auto;
-    padding: 10px;
-    text-align: left;
-    width: 320px;
   }
 
 
@@ -455,15 +391,14 @@ h5 {
 /* ****************************************** IPAD */
 @media (min-width: 376px) {
 
-  /* ****************************************** NAVIGATION */
-
   .refine-desktop,
   .nav-lg {
     display: none;
   }
 
+  .refine-mobile,
   .navigation-sm {
-    padding: 15px;
+    padding: 15px 0;
     background-color: #fff;
   }
 
@@ -490,145 +425,6 @@ h5 {
     font-size: 1rem;
   }
 
-  /* ****************************************** HERO */
-  .heads {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .bgimage {
-    width: 100%;
-    height: 260px;
-    background: #2c5095;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #2c5095 0%, #4e648e 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #2c5095 0%, #4e648e 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #2c5095 0%, #4e648e 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c5095', endColorstr='#4e648e', GradientType=0);
-    /* IE6-9 */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .over-img {
-    margin: -220px auto 0 auto;
-    width: 75%;
-    height: 350px;
-  }
-
-  .heads-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: #ccc;
-    width: 75%;
-    margin: auto;
-  }
-
-
-  .heads-level,
-  .heads-subject {
-    font-size: 1.25rem;
-    margin: auto;
-    text-align: center;
-    padding: 15px;
-  }
-
-
-
-  /* ****************************************** LOWER-INFO */
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 30%;
-    margin: 80px auto 50px 100px;
-  }
-
-  .projects-header {
-    padding: 0;
-    margin: auto;
-    font-size: 1.68rem;
-    text-transform: uppercase;
-  }
-
-  .projects-found {
-    padding: 0;
-    margin: 15px 0 auto 0;
-    font-size: 0.8rem;
-    text-align: left;
-  }
-
-  .project-title {
-    margin: 100px auto -15px auto;
-    font-size: 1.25rem;
-    text-align: center;
-  }
-
-  .project-thumbs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    padding: 50px
-  }
-
-  .project-thumbs img {
-    width: 30%;
-  }
-
-  .thumbs-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .thumb-nav-item {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #fff;
-    border: 1px solid #3a3a3a;
-    margin: 10px 2.5px
-  }
-
-  .thumb-nav-item.active {
-    border: none;
-    background: #339900;
-    width: 10px;
-    height: 10px;
-    margin: 9.275px 2.5px
-  }
-
-  .descript-container {
-    margin: auto
-  }
-
-  .proj-descript-title {
-    font-size: 1.75rem;
-    margin: auto 0 auto 100px;
-    text-align: left;
-  }
-
-  .proj-descript {
-    font-size: 1rem;
-    margin: 20px auto 20px 100px;
-    padding: 10px;
-    text-align: left;
-    width: 600px
-  }
-
 
 
   /* ****************************************** FOOTER */
@@ -636,14 +432,13 @@ h5 {
     background: #fefefe;
     border: 1px solid transparent;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
-    width: 100vw;
   }
 
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 50px;
+    margin: 50px auto;
     background: #fefefe;
   }
 
@@ -741,11 +536,11 @@ h5 {
   }
 
   ul.pages {
-    margin-top: 10px;
+    margin-top: 60px;
   }
 
   ul.pages.colm-2 {
-    margin-top: 35px;
+    margin-top: 85px;
   }
 
   ul.pages li a {
@@ -768,7 +563,7 @@ h5 {
     color: #3a3a3a;
     font-size: 0.8rem;
     width: 300px;
-    margin-top: 25px;
+    margin-top: 75px;
   }
 
   footer .foot-donate {
@@ -939,148 +734,6 @@ h5 {
     border-bottom: 2px solid #339900;
   }
 
-  /* ****************************************** HERO */
-  .heads {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .bgimage {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
-    width: 100%;
-    height: 460px;
-    background: url("../images/interactive.jpg");
-    background-repeat: no-repeat;
-    background-position-x: -200px;
-    background-position-y: -200px;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-  }
-
-  .over-img {
-    display: none
-  }
-
-  .heads-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background: #ccc;
-    width: 100%;
-    margin: auto;
-  }
-
-
-  .heads-level,
-  .heads-subject {
-    font-size: 1.25rem;
-    margin: auto 0 auto 50px;
-    text-align: center;
-    padding: 15px;
-  }
-
-
-
-  /* ****************************************** LOWER-INFO */
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 20%;
-    margin: 80px auto 50px 100px;
-  }
-
-  .projects-header {
-    padding: 0;
-    margin: auto;
-    font-size: 1.68rem;
-    text-transform: uppercase;
-  }
-
-  .projects-found {
-    padding: 0;
-    margin: 15px 0 auto 0;
-    font-size: 0.8rem;
-    text-align: left;
-  }
-
-  .project-title {
-    margin: 100px auto -15px auto;
-    font-size: 1.25rem;
-    text-align: center;
-  }
-
-  .project-thumbs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    padding: 50px
-  }
-
-  .project-thumbs img {
-    width: 30%;
-  }
-
-  .thumbs-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .thumb-nav-item {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #fff;
-    border: 1px solid #3a3a3a;
-    margin: 10px 2.5px
-  }
-
-  .thumb-nav-item.active {
-    border: none;
-    background: #339900;
-    width: 10px;
-    height: 10px;
-    margin: 9.275px 2.5px
-  }
-
-  .descript-container {
-    width: 800px;
-    height: 400px;
-    margin: 25px auto
-  }
-
-  .proj-descript-title {
-    font-size: 2.5rem;
-    margin: 20px auto;
-    text-align: left;
-  }
-
-  .descript-sub {
-    font-size: 1.75rem;
-    margin: 50px auto 10px auto;
-    text-align: left;
-  }
-
-  .proj-descript {
-    font-size: 1.35rem;
-    margin: 10px auto 0 auto;
-    text-align: left;
-    width: 800px
-  }
-
 
 
   /* ****************************************** FOOTER */
@@ -1088,14 +741,13 @@ h5 {
     background: #fefefe;
     border: 1px solid transparent;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
-    width: 100vw;
   }
 
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 50px;
+    margin: 50px auto;
     background: #fefefe;
   }
 
@@ -1193,11 +845,11 @@ h5 {
   }
 
   ul.pages {
-    margin-top: 10px;
+    margin-top: 60px;
   }
 
   ul.pages.colm-2 {
-    margin-top: 35px;
+    margin-top: 85px;
   }
 
   ul.pages li a {
@@ -1220,7 +872,7 @@ h5 {
     color: #3a3a3a;
     font-size: 0.8rem;
     width: 300px;
-    margin-top: 25px;
+    margin-top: 75px;
   }
 
   footer .foot-donate {

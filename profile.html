@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Source+Sans+Pro:400,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/profile.css">
+
+
+  <title>EduArtSource - About Us</title>
+</head>
+
+<body>
+  <!-- ------------------------------------------------ NAV - MOBILE/TABLET -->
+  <nav>
+    <div class="navbar-mobile">
+      <div class="navigation-sm">
+        <button class="hamburger">&#9776;</button>
+        <button class="exit-menu">&#735;</button>
+        <h2 class="title">EduArtSource</h2>
+        <a href="education.html"><button class="start-search iconify go-to-search-sm"
+            data-icon="entypo-magnifying-glass" data-inline="false"></button></a>
+      </div>
+      <div class=" menu">
+        <ul>
+          <a href="index.html">
+            <li>For Students</li>
+          </a>
+          <a href="for-educators.html">
+            <li>For Educators</li>
+          </a>
+          <a href="about-us.html">
+            <li>About Us</li>
+          </a>
+          <a href="donate.html">
+            <li class="donate">Donate</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- -------------------------------------------- NAV - MOBILE/TABLET END -->
+
+  <!-- ------------------------------------------------------ NAV _ DESKTOP -->
+  <nav class="nav-lg">
+    <div class="nav-first-row">
+      <div class="page-nav">
+        <ul class="page-tabs">
+          <div class="page-nav-spacer"></div>
+          <li class="nav-item">
+            <a class="nav-link nav-stu disabled" href="#">For Students</a>
+          </li>
+          <div class="page-nav-spacer"></div>
+          <li class="nav-item">
+            <a class="nav-link nav-edu" href="for-educators.html">For Educators</a>
+          </li>
+          <div class="page-nav-spacer"></div>
+          <li class="nav-item">
+            <a class="nav-link nav-about-us" href="about-us.html">About Us</a>
+          </li>
+          <div class="page-nav-spacer"></div>
+        </ul>
+      </div>
+
+      <div class="user-nav">
+        <ul class="user-tabs">
+          <li class="nav-item">
+            <a class="nav-link login" href="login.html">Log in</a>
+          </li>
+          <div class="page-nav-spacer"></div>
+          <li class="nav-item">
+            <a class="nav-link signup" href="signup.html">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-second-row">
+      <h1 class="nav-brand">EduArtSource</h1>
+      <div class="nav-second-block">
+        <ul class="user-tabs-row-2">
+          <div class="nav-search-group">
+            <span class="iconify go-to-search" data-icon="entypo-magnifying-glass" data-inline="false"></span>
+            <li class="nav-item">
+              <a class=" nav-link search" href="education.html">Search</a>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link donate" href="donate.html">donate</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <!-- -------------------------------------------------- NAV _ DESKTOP END -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+
+          <div class="card-body">
+            <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="basicInfo-tab" data-toggle="tab" href="#basicInfo" role="tab"
+                  aria-controls="basicInfo" aria-selected="true">View</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" role="tab"
+                  aria-controls="connectedServices" aria-selected="false">Edit</a>
+              </li>
+            </ul>
+
+
+            <div class="row">
+              <div class="col-12">
+
+                <div class="tab-content ml-1" id="myTabContent">
+                  <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
+
+                    <div class="card-title mb-4">
+                      <div class="d-flex justify-content-start">
+                        <div class="image-container">
+                          <img src="http://placehold.it/150x150" id="imgProfile" style="width: 150px; height: 150px"
+                            class="img-thumbnail" />
+                          <div class="middle">
+                            <input type="button" class="btn btn-secondary" id="btnChangePicture" value="Change" />
+                            <input type="file" style="display: none;" id="profilePicture" name="file" />
+                          </div>
+                        </div>
+                        <div class="userData ml-3">
+                          <h2 class="d-block" style="font-size: 1rem; font-weight: bold; color: #339900;">User
+                            Name</a></h2>
+                          <h6 class="d-block" style="font-size: 0.9rem; color: #3a3a3a;">Professor</h6>
+                          <h6 class="d-block" style="font-size: 0.9rem; color: #3a3a3a;">Missouri State University</h6>
+                          <h6 class="d-block" style="font-size: 0.9rem; color: #3a3a3a;">Springfield, Mo</h6>
+                        </div>
+                        <div class="ml-auto">
+                          <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column inz">
+                      <div class="profile-sub">
+                        <h1>my curricula</h1>
+                      </div>
+                      <p class="profile-info">
+                        This user has not saved any Curricula.
+                      </p>
+                    </div>
+                    <hr />
+
+                    <div class="column">
+                      <div class="profile-sub">
+                        <h1>my projects</h1>
+                      </div>
+                      <p class="profile-info">
+                        This user has not saved any Projects.
+                      </p>
+                    </div>
+                    <hr />
+
+                    <div class="column">
+                      <div class="profile-sub">
+                        <h1>my workshops</h1>
+                      </div>
+                      <p class="profile-info">
+                        This user has not saved any Workshops.
+                      </p>
+                    </div>
+                    <hr />
+
+                    <div class="column">
+                      <div class="profile-sub">
+                        <h1>my resources</h1>
+                      </div>
+                      <p class="profile-info">
+                        This user has not saved any Resources.
+                      </p>
+                    </div>
+                    <hr />
+
+                    <div class="column">
+                      <div class="profile-sub follow">
+                        <h1>my followers</h1>
+                      </div>
+                      <p class="profile-info follow">
+                        This user currently has no followers.
+                      </p>
+                    </div>
+                    <hr />
+
+                    <div class="column">
+                      <div class="profile-sub follow">
+                        <h1>educators i follow</h1>
+                      </div>
+                      <p class="profile-info follow">
+                        This user is not currently following any educators.
+                      </p>
+                    </div>
+                    <hr />
+
+                  </div>
+                  <div class="tab-pane fade" id="connectedServices" role="tabpanel"
+                    aria-labelledby="ConnectedServices-tab">
+                    <div class="container bootstrap snippet">
+                      <div class="row">
+                        <div class="col-sm-10 user-name">
+                          <h1>User name</h1>
+                        </div>
+
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3 inz">
+                          <!--left col-->
+
+
+                          <div class="text-center">
+                            <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+                              class="avatar img-circle img-thumbnail" alt="avatar">
+                            <h6>Upload a different photo...</h6>
+                            <input type="file" class="text-center center-block file-upload">
+                          </div>
+                          </hr><br>
+
+
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="home">
+                              <hr>
+                              <form class="form" action="##" method="post" id="registrationForm">
+                                <div class="form-group">
+
+                                  <div class="col-xs-6">
+                                    <label for="first_name">
+                                      <h4>First name</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="first_name" id="first_name"
+                                      placeholder="first name" title="enter your first name if any.">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+
+                                  <div class="col-xs-6">
+                                    <label for="last_name">
+                                      <h4>Last name</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="last_name" id="last_name"
+                                      placeholder="last name" title="enter your last name if any.">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+
+                                  <div class="col-xs-6">
+                                    <label for="phone">
+                                      <h4>Phone</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="phone" id="phone"
+                                      placeholder="enter phone" title="enter your phone number if any.">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <div class="col-xs-6">
+                                    <label for="mobile">
+                                      <h4>Mobile</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="mobile" id="mobile"
+                                      placeholder="enter mobile number" title="enter your mobile number if any.">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+
+                                  <div class="col-xs-6">
+                                    <label for="email">
+                                      <h4>Email</h4>
+                                    </label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                      placeholder="you@email.com" title="enter your email.">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+
+                                  <div class="col-xs-6">
+                                    <label for="email">
+                                      <h4>Location</h4>
+                                    </label>
+                                    <input type="email" class="form-control" id="location" placeholder="somewhere"
+                                      title="enter a location">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+
+                                  <div class="col-xs-6">
+                                    <label for="password">
+                                      <h4>Password</h4>
+                                    </label>
+                                    <input type="password" class="form-control" name="password" id="password"
+                                      placeholder="password" title="enter your password.">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+
+                                  <div class="col-xs-6">
+                                    <label for="password2">
+                                      <h4>Verify</h4>
+                                    </label>
+                                    <input type="password" class="form-control" name="password2" id="password2"
+                                      placeholder="password2" title="enter your password2.">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-xs-12">
+                                    <br>
+                                    <button class="btn btn-lg btn-success" type="submit"><i
+                                        class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                    <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i>
+                                      Reset</button>
+                                  </div>
+                                </div>
+                              </form>
+
+                              <hr>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ------------------------------------------------------------- FOOTER -->
+          <footer>
+            <div class="footer">
+              <div class="foot-branding">
+                <h1 class="foot-brand">EduArtSource</h1>
+                <p class="foot-brand-info">EduArtSource is a platform for sharing education resources for design and
+                  media
+                  arts
+                  educators.</p>
+                <div class='foot-social'>
+                  <div class='icon social fb'><i class="fa fa-facebook"></i></i></div>
+                  <div class='icon social tw'><i class='fa fa-twitter'></i></div>
+                  <div class='icon social in'><i class='fa fa-linkedin'></i></div>
+                  <div class='icon social ig'><i class='fa fa-instagram'></i></div>
+                </div>
+              </div>
+
+              <div class="foot-nav">
+                <ul class="pages colm-2">
+                  <li><a href="#">For Students</a></li>
+                  <li><a href="#">For Educators</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+
+              <div class="foot-support">
+                <ul class="pages">
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Help & FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+
+              <div class="foot-donation">
+                <p class="foot-donate-info">EduArtSource relies on the support from educators of design and media arts.
+                </p>
+                <a class="foot-donate" href="#">donate</a>
+              </div>
+            </div>
+
+          </footer>
+          <!-- --------------------------------------------------------- FOOTER END -->
+
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+          </script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+          </script>
+
+
+          <script src="js/nav.js"></script>
+</body>
+
+</html>
