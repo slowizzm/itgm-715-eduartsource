@@ -156,7 +156,7 @@ h5 {
     margin: auto;
     width: 100%;
     height: 250px;
-    background: url("images/about-us-hero.jpg");
+    background: url("../images/about-us-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -442,7 +442,7 @@ h5 {
     margin: auto;
     width: 100%;
     height: 250px;
-    background: url("images/about-us-hero.jpg");
+    background: url("../images/about-us-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -850,7 +850,7 @@ h5 {
     margin: auto;
     max-width: 100vw;
     height: 460px;
-    background: url("images/about-us-hero.jpg");
+    background: url("../images/about-us-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
