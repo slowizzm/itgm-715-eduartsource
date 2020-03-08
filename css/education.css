@@ -1315,7 +1315,7 @@ h5 {
   .nav-item .nav-link.nav-edu,
   .nav-item .nav-link.nav-about-us,
   .nav-item .nav-link.login,
-  .nav-item .nav-link.signup {
+  .nav-item .nav-link.profile {
     font-size: 0.8rem;
     line-height: 1rem;
   }
@@ -1331,6 +1331,25 @@ h5 {
     color: #999999;
     height: 40px;
     z-index: 100;
+  }
+
+  .user-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    margin-left: 50px
+  }
+
+  .user-img {
+    width: 28px;
+    height: 28px;
+    margin: 5px 5px auto 20px
+  }
+
+  .profile {
+    color: #3a3a3a;
+    padding: 10px
   }
 
   .nav-second-row {
