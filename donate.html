@@ -148,12 +148,12 @@
 
               <div class="row" style="margin: auto;">
                 <div class="custom-control custom-checkbox" style="transform: scale(0.75);">
-                  <input type="checkbox" class="custom-control-input" id="defaultChecked2" checked>
-                  <label class="custom-control-label" for="defaultChecked2">Give monthly</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultChecked" checked>
+                  <label class="custom-control-label" for="defaultChecked">Give monthly</label>
                 </div>
 
                 <div class="custom-control custom-checkbox" style="transform: scale(0.75);">
-                  <input type=" checkbox" class="custom-control-input" id="defaultChecked2">
+                  <input type="checkbox" class="custom-control-input" id="defaultChecked2">
                   <label class=" custom-control-label" for="defaultChecked2">Give one time</label>
                 </div>
               </div>
@@ -231,6 +231,14 @@
 
   <script src="js/nav.js"></script>
   <script src="js/forms.js"></script>
+
+  <script>
+    $(function () {
+      $('input[type="checkbox"]').bind('click', function () {
+        $('input[type="checkbox"]').not(this).prop("checked", false);
+      });
+    });
+  </script>
 </body>
 
 </html>
