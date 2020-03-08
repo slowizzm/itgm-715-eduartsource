@@ -71,11 +71,6 @@ h5 {
   border-radius: 4px;
 }
 
-.start-search {
-  font-size: 2.7em;
-  transform: rotateX(180deg);
-}
-
 .exit-menu {
   border: 0;
   font-size: 3em;
@@ -127,9 +122,13 @@ h5 {
     font-size: 1.6rem;
   }
 
-  .hamburger,
+  .hamburger {
+    font-size: 1.4rem;
+  }
+
+
   .start-search {
-    font-size: 1.4em;
+    padding: 5px
   }
 
   .exit-menu {
@@ -392,9 +391,13 @@ h5 {
     font-size: 1.6rem;
   }
 
-  .hamburger,
+  .hamburger {
+    font-size: 1.4rem;
+  }
+
+
   .start-search {
-    font-size: 1.4em;
+    padding: 5px
   }
 
   .exit-menu {
@@ -737,6 +740,7 @@ h5 {
     color: #339900;
     margin-left: 190px;
     font-size: 1.68rem;
+    z-index: 100;
   }
 
   .user-tabs-row-2 {
@@ -763,10 +767,11 @@ h5 {
     color: #339900;
     text-align: center;
     font-weight: bold;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     border: #339900 solid 1px;
     text-decoration: none;
     text-transform: uppercase;
+    height: 35px
   }
 
   .nav-search-group {

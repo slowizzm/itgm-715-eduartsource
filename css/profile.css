@@ -67,8 +67,8 @@ h5 {
 }
 
 .start-search {
-  font-size: 2.7em;
-  transform: rotateX(180deg);
+  font-size: 1.7rem;
+  /* transform: rotateX(180deg); */
 }
 
 .exit-menu {
@@ -221,9 +221,13 @@ h5 {
     font-size: 1.6rem;
   }
 
-  .hamburger,
+  .hamburger {
+    font-size: 1.4rem;
+  }
+
+
   .start-search {
-    font-size: 1.4em;
+    padding: 5px
   }
 
   .exit-menu {
@@ -415,9 +419,13 @@ h5 {
     font-size: 1.6rem;
   }
 
-  .hamburger,
+  .hamburger {
+    font-size: 1.4rem;
+  }
+
+
   .start-search {
-    font-size: 1.4em;
+    padding: 5px
   }
 
   .exit-menu {
