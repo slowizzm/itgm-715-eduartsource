@@ -154,7 +154,7 @@ h5 {
     margin: auto;
     width: 100%;
     height: 250px;
-    background: url("/images/landing-hero.jpg");
+    background: url("../images/landing-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -423,7 +423,7 @@ h5 {
     margin: auto;
     width: 100%;
     height: 250px;
-    background: url("/images/landing-hero.jpg");
+    background: url("../images/landing-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -809,7 +809,7 @@ h5 {
     margin: auto;
     width: 100%;
     height: 460px;
-    background: url("/images/landing-hero.jpg");
+    background: url("../images/landing-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

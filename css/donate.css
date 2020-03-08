@@ -794,10 +794,11 @@ label.levels {
     color: #339900;
     text-align: center;
     font-weight: bold;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     border: #339900 solid 1px;
     text-decoration: none;
     text-transform: uppercase;
+    height: 35px
   }
 
   .nav-search-group {
