@@ -193,9 +193,13 @@ h5 {
   margin: 10px auto
 }
 
-
-.inz .tab-content label {
+.edit-profile .tab-content label {
   color: #3a3a3a
+}
+
+.edit-profile {
+  border: solid;
+  width: 100%;
 }
 
 /* ****************************************** MOBILE */
