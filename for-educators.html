@@ -41,9 +41,12 @@
           <a href="about-us.html">
             <li>About Us</li>
           </a>
-          <a href="donate.html">
-            <li class="donate">Donate</li>
+          <a href="profile.html">
+            <li>Profile</li>
           </a>
+          <a href="donate.html">
+          </a>
+          <li class="donate">Donate</li>
         </ul>
       </div>
     </div>
@@ -107,17 +110,16 @@
   <section class="bgimage">
     <div class="head-container">
       <h5>Search curriculum, projects, workshops, and resources.</h5>
-      <form>
-        <div class="input-group search">
-          <span class="input-group-prepend">
-          </span>
-          <button id="search-btn" class="btn" type="button">
-            <i class="fa fa-search"></i>
-          </button>
-          <input type="text" class="form-control rounded-0" id="validationDefaultUsername"
-            placeholder="Search Topics & Resources" aria-describedby="inputGroupPrepend2" required>
-        </div>
-      </form>
+      <div class="input-group search">
+        <span class="input-group-prepend">
+        </span>
+        <button id="search-btn" class="btn" type="button">
+          <i class="fa fa-search"></i>
+        </button>
+        <input type="text" class="form-control rounded-0" id="validationDefaultUsername"
+          placeholder="Search Topics & Resources" aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
   </section>
   <!-- ----------------------------------------------------- HERO IMAGE END -->
 
@@ -127,33 +129,39 @@
 
   <!-- -------------------------------------------------------------- CARDS -->
   <section class="cards">
-    <div class="card flex-row">
-      <div class="card-header border-0">
-        <img src="/images/icons/curriculum.png" alt="">
+    <a href="education.html">
+      <div class="card flex-row">
+        <div class="card-header border-0">
+          <img src="images/icons/curriculum.png" alt="">
+        </div>
+        <div class="card-block px-2">
+          <h4 class="card-title">Curriculum</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        </div>
       </div>
-      <div class="card-block px-2">
-        <h4 class="card-title">Curriculum</h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    </a>
+    <a href="education.html">
+      <div class="card flex-row">
+        <div class="card-header border-0">
+          <img src="images/icons/workshop.png" alt="">
+        </div>
+        <div class="card-block px-2">
+          <h4 class="card-title">Projects & Workshops</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, enim ullamcorper maecenas interdum, massa erat.</p>
+        </div>
       </div>
-    </div>
-    <div class="card flex-row">
-      <div class="card-header border-0">
-        <img src="/images/icons/workshop.png" alt="">
+    </a>
+    <a href="education.html">
+      <div class="card flex-row">
+        <div class="card-header border-0">
+          <img src="images/icons/resource.png" alt="">
+        </div>
+        <div class="card-block px-2">
+          <h4 class="card-title">Resources</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, pulvinar neque nonummy lobortis urna.</p>
+        </div>
       </div>
-      <div class="card-block px-2">
-        <h4 class="card-title">Projects & Workshops</h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, enim ullamcorper maecenas interdum, massa erat.</p>
-      </div>
-    </div>
-    <div class="card flex-row">
-      <div class="card-header border-0">
-        <img src="/images/icons/resource.png" alt="">
-      </div>
-      <div class="card-block px-2">
-        <h4 class="card-title">Resources</h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, pulvinar neque nonummy lobortis urna.</p>
-      </div>
-    </div>
+    </a>
   </section>
   <!-- ---------------------------------------------------------- CARDS END -->
 
@@ -161,7 +169,10 @@
   <footer>
     <div class="footer">
       <div class="foot-branding">
-        <h1 class="foot-brand">EduArtSource</h1>
+        <div class="foot-brand-container">
+          <img src="images/brand.png" alt="" class="foot-brand-img">
+          <h1 class="foot-brand">EduArtSource</h1>
+        </div>
         <p class="foot-brand-info">EduArtSource is a platform for sharing education resources for design and media arts
           educators.</p>
         <div class='foot-social'>
@@ -173,11 +184,10 @@
       </div>
 
       <div class="foot-nav">
-        <ul class="pages colm-2">
+        <ul class="pages">
           <li><a href="#">For Students</a></li>
-          <li><a href="#">For Educators</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="for-educators.html">For Educators</a></li>
+          <li><a href="about-us.html">About Us</a></li>
         </ul>
       </div>
 
@@ -186,12 +196,13 @@
           <li><a href="#">Support</a></li>
           <li><a href="#">Help & FAQ</a></li>
           <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
 
       <div class="foot-donation">
         <p class="foot-donate-info">EduArtSource relies on the support from educators of design and media arts.</p>
-        <a class="foot-donate" href="#">donate</a>
+        <a class="foot-donate" href="donate.html">donate</a>
       </div>
     </div>
 

@@ -35,6 +35,11 @@ h5 {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+  background: #fefefe;
+}
+
+.navbar.navbar-expand-lg {
+  background: #fefefe;
 }
 
 .title {
@@ -105,17 +110,10 @@ h5 {
   color: #339900;
 }
 
-.active {
-  color: #339900 !important;
-  border-bottom: 2px solid #339900;
-}
-
 /* ****************************************** MOBILE */
 @media (max-width: 375px) {
 
   /* ****************************************** NAVIGATION */
-
-  .refine-desktop,
   .nav-lg {
     display: none;
   }
@@ -299,40 +297,51 @@ h5 {
     width: 320px;
   }
 
-
-
   /* ****************************************** FOOTER */
   footer {
     background: #fefefe;
-    border: 1px solid transparent;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
-    width: 100vw;
   }
 
   .footer {
     display: block;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 50px;
+    padding: 20px;
     background: #fefefe;
+    max-width: 90%;
+    min-width: 60%;
+    margin: 0 auto
+  }
+
+  .foot-brand-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .foot-brand-img {
+    width: 32px;
+    height: 32px
   }
 
   .foot-brand {
     color: #339900;
-    font-size: 1.8rem;
-    margin: 25px 0;
+    font-size: 1.25rem;
+    margin: 20px 10px;
   }
 
   .foot-brand-info {
     color: #3a3a3a;
     font-size: 0.8rem;
-    width: 300px;
   }
 
   .foot-social {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 20px 0px;
   }
 
   .icon {
@@ -361,7 +370,7 @@ h5 {
 
   .icon.social {
     float: left;
-    margin: 0 15px 0 0;
+    margin: 0 5px 0 0;
     cursor: pointer;
     background: #fefefe;
     color: #3a3a3a;
@@ -399,28 +408,18 @@ h5 {
   }
 
   .foot-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 60%;
+    margin: 20px 0
   }
 
   .foot-support {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  ul.pages {
-    margin-top: 10px;
-  }
-
-  ul.pages.colm-2 {
-    margin-top: 35px;
+    width: 60%;
+    margin: 20px 10px 20px 0
   }
 
   ul.pages li a {
     color: #3a3a3a;
-    font-size: 0.9rem;
+    font-size: 0.78rem;
   }
 
   ul.pages li a:hover {
@@ -429,22 +428,25 @@ h5 {
   }
 
   .foot-donation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 100%
   }
 
   .foot-donate-info {
     color: #3a3a3a;
-    font-size: 0.8rem;
-    width: 300px;
-    margin-top: 25px;
+    font-size: 0.85rem;
+    margin: 20px 0px 20px 20px
   }
 
   footer .foot-donate {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #339900;
     text-transform: uppercase;
+    width: 90px;
+    height: 40px;
+    line-height: 1.5rem;
+    border: 1px solid;
+    padding: 5px;
+    margin: auto 20px
   }
 
   .foot-donate:hover {
@@ -456,14 +458,14 @@ h5 {
 @media (min-width: 376px) {
 
   /* ****************************************** NAVIGATION */
-
   .refine-desktop,
   .nav-lg {
     display: none;
   }
 
+  .refine-mobile,
   .navigation-sm {
-    padding: 15px;
+    padding: 15px 0;
     background-color: #fff;
   }
 
@@ -629,40 +631,51 @@ h5 {
     width: 600px
   }
 
-
-
   /* ****************************************** FOOTER */
   footer {
     background: #fefefe;
-    border: 1px solid transparent;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
-    width: 100vw;
   }
 
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 50px;
+    padding: 20px;
     background: #fefefe;
+    max-width: 90%;
+    min-width: 60%;
+    margin: 0 auto
+  }
+
+  .foot-brand-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .foot-brand-img {
+    width: 32px;
+    height: 32px
   }
 
   .foot-brand {
     color: #339900;
-    font-size: 1.8rem;
-    margin: 25px 0;
+    font-size: 1.25rem;
+    margin: 20px 10px;
   }
 
   .foot-brand-info {
     color: #3a3a3a;
     font-size: 0.8rem;
-    width: 300px;
   }
 
   .foot-social {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 20px 0px;
   }
 
   .icon {
@@ -691,7 +704,7 @@ h5 {
 
   .icon.social {
     float: left;
-    margin: 0 15px 0 0;
+    margin: 0 5px 0 0;
     cursor: pointer;
     background: #fefefe;
     color: #3a3a3a;
@@ -729,28 +742,18 @@ h5 {
   }
 
   .foot-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 60%;
+    margin: 20px 0
   }
 
   .foot-support {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  ul.pages {
-    margin-top: 10px;
-  }
-
-  ul.pages.colm-2 {
-    margin-top: 35px;
+    width: 60%;
+    margin: 20px 10px 20px 0
   }
 
   ul.pages li a {
     color: #3a3a3a;
-    font-size: 0.9rem;
+    font-size: 0.78rem;
   }
 
   ul.pages li a:hover {
@@ -759,22 +762,25 @@ h5 {
   }
 
   .foot-donation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 100%
   }
 
   .foot-donate-info {
     color: #3a3a3a;
-    font-size: 0.8rem;
-    width: 300px;
-    margin-top: 25px;
+    font-size: 0.85rem;
+    margin: 20px 0px 20px 20px
   }
 
   footer .foot-donate {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #339900;
     text-transform: uppercase;
+    width: 90px;
+    height: 40px;
+    line-height: 1.5rem;
+    border: 1px solid;
+    padding: 5px;
+    margin: auto 20px
   }
 
   .foot-donate:hover {
@@ -953,9 +959,8 @@ h5 {
     margin: auto;
     width: 100%;
     height: 460px;
-    background: url("../images/interactive.jpg");
+    background: url("/images/interactive.jpg");
     background-repeat: no-repeat;
-    background-position-x: -200px;
     background-position-y: -200px;
     background-size: cover;
     background-attachment: fixed;
@@ -1081,40 +1086,52 @@ h5 {
     width: 800px
   }
 
-
-
   /* ****************************************** FOOTER */
   footer {
     background: #fefefe;
-    border: 1px solid transparent;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
-    width: 100vw;
+    width: 100vw
   }
 
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 50px;
+    padding: 20px;
     background: #fefefe;
+    max-width: 60%;
+    min-width: 50%;
+    margin: auto
+  }
+
+  .foot-brand-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .foot-brand-img {
+    width: 48px;
+    height: 48px
   }
 
   .foot-brand {
     color: #339900;
-    font-size: 1.8rem;
-    margin: 25px 0;
+    font-size: 1.5rem;
+    margin: 20px;
   }
 
   .foot-brand-info {
     color: #3a3a3a;
-    font-size: 0.8rem;
-    width: 300px;
+    font-size: 1rem;
   }
 
   .foot-social {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 20px 0px;
   }
 
   .icon {
@@ -1143,7 +1160,7 @@ h5 {
 
   .icon.social {
     float: left;
-    margin: 0 15px 0 0;
+    margin: 0 5px 0 0;
     cursor: pointer;
     background: #fefefe;
     color: #3a3a3a;
@@ -1181,23 +1198,13 @@ h5 {
   }
 
   .foot-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 80%;
+    margin: 20px
   }
 
   .foot-support {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  ul.pages {
-    margin-top: 10px;
-  }
-
-  ul.pages.colm-2 {
-    margin-top: 35px;
+    width: 80%;
+    margin: 20px
   }
 
   ul.pages li a {
@@ -1211,22 +1218,25 @@ h5 {
   }
 
   .foot-donation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 100%;
   }
 
   .foot-donate-info {
     color: #3a3a3a;
-    font-size: 0.8rem;
-    width: 300px;
-    margin-top: 25px;
+    font-size: 1rem;
+    margin: 20px
   }
 
   footer .foot-donate {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #339900;
     text-transform: uppercase;
+    width: 90px;
+    height: 40px;
+    line-height: 1.5rem;
+    border: 1px solid;
+    padding: 5px;
+    margin: auto 20px
   }
 
   .foot-donate:hover {

@@ -110,6 +110,7 @@ h5 {
   border-bottom: 2px solid #339900;
 }
 
+/* --------------------------------------------------- CARD */
 
 .card-body .nav-tabs .nav-link {
   color: #3a3a3a
@@ -235,40 +236,51 @@ h5 {
     font-size: 1rem;
   }
 
-
-
   /* ****************************************** FOOTER */
   footer {
     background: #fefefe;
-    border: 1px solid transparent;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
-    width: 100vw;
   }
 
   .footer {
     display: block;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 50px;
+    padding: 20px;
     background: #fefefe;
+    max-width: 90%;
+    min-width: 60%;
+    margin: 0 auto
+  }
+
+  .foot-brand-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .foot-brand-img {
+    width: 32px;
+    height: 32px
   }
 
   .foot-brand {
     color: #339900;
-    font-size: 1.8rem;
-    margin: 25px 0;
+    font-size: 1.25rem;
+    margin: 20px 10px;
   }
 
   .foot-brand-info {
     color: #3a3a3a;
     font-size: 0.8rem;
-    width: 300px;
   }
 
   .foot-social {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 20px 0px;
   }
 
   .icon {
@@ -297,7 +309,7 @@ h5 {
 
   .icon.social {
     float: left;
-    margin: 0 15px 0 0;
+    margin: 0 5px 0 0;
     cursor: pointer;
     background: #fefefe;
     color: #3a3a3a;
@@ -335,28 +347,18 @@ h5 {
   }
 
   .foot-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 60%;
+    margin: 20px 0
   }
 
   .foot-support {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  ul.pages {
-    margin-top: 10px;
-  }
-
-  ul.pages.colm-2 {
-    margin-top: 35px;
+    width: 60%;
+    margin: 20px 10px 20px 0
   }
 
   ul.pages li a {
     color: #3a3a3a;
-    font-size: 0.9rem;
+    font-size: 0.78rem;
   }
 
   ul.pages li a:hover {
@@ -365,22 +367,25 @@ h5 {
   }
 
   .foot-donation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 100%
   }
 
   .foot-donate-info {
     color: #3a3a3a;
-    font-size: 0.8rem;
-    width: 300px;
-    margin-top: 25px;
+    font-size: 0.85rem;
+    margin: 20px 0px 20px 20px
   }
 
   footer .foot-donate {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #339900;
     text-transform: uppercase;
+    width: 90px;
+    height: 40px;
+    line-height: 1.5rem;
+    border: 1px solid;
+    padding: 5px;
+    margin: auto 20px
   }
 
   .foot-donate:hover {
@@ -425,12 +430,9 @@ h5 {
     font-size: 1rem;
   }
 
-
-
   /* ****************************************** FOOTER */
   footer {
     background: #fefefe;
-    border: 1px solid transparent;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
   }
 
@@ -438,26 +440,41 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 50px auto;
+    padding: 20px;
     background: #fefefe;
+    max-width: 90%;
+    min-width: 60%;
+    margin: 0 auto
+  }
+
+  .foot-brand-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .foot-brand-img {
+    width: 32px;
+    height: 32px
   }
 
   .foot-brand {
     color: #339900;
-    font-size: 1.8rem;
-    margin: 25px 0;
+    font-size: 1.25rem;
+    margin: 20px 10px;
   }
 
   .foot-brand-info {
     color: #3a3a3a;
     font-size: 0.8rem;
-    width: 300px;
   }
 
   .foot-social {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 20px 0px;
   }
 
   .icon {
@@ -486,7 +503,7 @@ h5 {
 
   .icon.social {
     float: left;
-    margin: 0 15px 0 0;
+    margin: 0 5px 0 0;
     cursor: pointer;
     background: #fefefe;
     color: #3a3a3a;
@@ -524,28 +541,18 @@ h5 {
   }
 
   .foot-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 60%;
+    margin: 20px 0
   }
 
   .foot-support {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  ul.pages {
-    margin-top: 60px;
-  }
-
-  ul.pages.colm-2 {
-    margin-top: 85px;
+    width: 60%;
+    margin: 20px 10px 20px 0
   }
 
   ul.pages li a {
     color: #3a3a3a;
-    font-size: 0.9rem;
+    font-size: 0.78rem;
   }
 
   ul.pages li a:hover {
@@ -554,22 +561,25 @@ h5 {
   }
 
   .foot-donation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 100%
   }
 
   .foot-donate-info {
     color: #3a3a3a;
-    font-size: 0.8rem;
-    width: 300px;
-    margin-top: 75px;
+    font-size: 0.85rem;
+    margin: 20px 0px 20px 20px
   }
 
   footer .foot-donate {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #339900;
     text-transform: uppercase;
+    width: 90px;
+    height: 40px;
+    line-height: 1.5rem;
+    border: 1px solid;
+    padding: 5px;
+    margin: auto 20px
   }
 
   .foot-donate:hover {
@@ -734,39 +744,52 @@ h5 {
     border-bottom: 2px solid #339900;
   }
 
-
-
   /* ****************************************** FOOTER */
   footer {
     background: #fefefe;
-    border: 1px solid transparent;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
+    width: 100vw
   }
 
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 50px auto;
+    padding: 20px;
     background: #fefefe;
+    max-width: 60%;
+    min-width: 50%;
+    margin: auto
+  }
+
+  .foot-brand-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .foot-brand-img {
+    width: 48px;
+    height: 48px
   }
 
   .foot-brand {
     color: #339900;
-    font-size: 1.8rem;
-    margin: 25px 0;
+    font-size: 1.5rem;
+    margin: 20px;
   }
 
   .foot-brand-info {
     color: #3a3a3a;
-    font-size: 0.8rem;
-    width: 300px;
+    font-size: 1rem;
   }
 
   .foot-social {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 20px 0px;
   }
 
   .icon {
@@ -795,7 +818,7 @@ h5 {
 
   .icon.social {
     float: left;
-    margin: 0 15px 0 0;
+    margin: 0 5px 0 0;
     cursor: pointer;
     background: #fefefe;
     color: #3a3a3a;
@@ -833,23 +856,13 @@ h5 {
   }
 
   .foot-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 80%;
+    margin: 20px
   }
 
   .foot-support {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  ul.pages {
-    margin-top: 60px;
-  }
-
-  ul.pages.colm-2 {
-    margin-top: 85px;
+    width: 80%;
+    margin: 20px
   }
 
   ul.pages li a {
@@ -863,22 +876,25 @@ h5 {
   }
 
   .foot-donation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 100%;
   }
 
   .foot-donate-info {
     color: #3a3a3a;
-    font-size: 0.8rem;
-    width: 300px;
-    margin-top: 75px;
+    font-size: 1rem;
+    margin: 20px
   }
 
   footer .foot-donate {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #339900;
     text-transform: uppercase;
+    width: 90px;
+    height: 40px;
+    line-height: 1.5rem;
+    border: 1px solid;
+    padding: 5px;
+    margin: auto 20px
   }
 
   .foot-donate:hover {

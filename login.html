@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
   <!-- Bootstrap CSS -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Source+Sans+Pro:400,700&display=swap"
@@ -19,71 +20,87 @@
 <body>
   <!-- ------------------------------------------------ NAV - MOBILE/TABLET -->
   <nav>
-    <div class="navigation-sm">
-      <button class="hamburger">&#9776</button>
-      <button class="exit-menu">&#735</button>
-      <h2 class="title">EduArtSource</h2>
-      <<a href="education.html"><button class="start-search iconify go-to-search-sm" data-icon="entypo-magnifying-glass"
-          data-inline="false"></button></a>
-    </div>
-    <div class=" menu">
-      <ul>
-        <a href="#">
-          <li>For Students</li>
-        </a>
-        <a href="for-educators.html">
-          <li>For Educators</li>
-        </a>
-        <a href="about-us.html">
-          <li>About Us</li>
-        </a>
-        <a href="login.html">
-          <li>Log in</li>
-        </a>
-        <a href="signup.html">
-          <li>Sign up</li>
-        </a>
-        <a href="donate.html">
-          <li class="donate">Donate</li>
-        </a>
-      </ul>
+    <div class="navbar-mobile">
+      <div class="navigation-sm">
+        <button class="hamburger">&#9776;</button>
+        <button class="exit-menu">&#735;</button>
+        <h2 class="title">EduArtSource</h2>
+        <a href="education.html"><button class="start-search iconify go-to-search-sm"
+            data-icon="entypo-magnifying-glass" data-inline="false"></button></a>
+      </div>
+      <div class=" menu">
+        <ul>
+          <a href="index.html">
+            <li>For Students</li>
+          </a>
+          <a href="for-educators.html">
+            <li>For Educators</li>
+          </a>
+          <a href="about-us.html">
+            <li>About Us</li>
+          </a>
+          <a href="profile.html">
+            <li>Profile</li>
+          </a>
+          <a href="donate.html">
+            <li class="donate">Donate</li>
+          </a>
+        </ul>
+      </div>
     </div>
   </nav>
   <!-- -------------------------------------------- NAV - MOBILE/TABLET END -->
 
   <!-- ------------------------------------------------------ NAV _ DESKTOP -->
-  <nav class="navbar navbar-expand-lg ">
-    <div class="navbar-collapse collapse w-100 order-1 order-lg-0 dual-collapse2">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link nav-stu disabled" href="#">For Students</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-edu" href="for-educators.html">For Educators</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-about-us" href="about-us.html">About Us</a>
-        </li>
-      </ul>
-    </div>
-    <div class="mx-auto order-0">
-      <div class="subbg">
-        <a class="navbar-brand mx-auto" href="#">EduArtSource</a>
-        <span class="iconify go-to-search" data-icon="entypo-magnifying-glass" data-inline="false"></span>
-        <a class="mx-auto go-to-search" href="#">Search</a>
-        <a class="mx-auto donate" href="#">DONATE</a>
+  <nav class="nav-lg">
+    <div class="nav-first-row">
+      <div class="page-nav">
+        <ul class="page-tabs">
+          <div class="page-nav-spacer"></div>
+          <li class="nav-item">
+            <a class="nav-link nav-stu disabled" href="#">For Students</a>
+          </li>
+          <div class="page-nav-spacer"></div>
+          <li class="nav-item">
+            <a class="nav-link nav-edu" href="for-educators.html">For Educators</a>
+          </li>
+          <div class="page-nav-spacer"></div>
+          <li class="nav-item">
+            <a class="nav-link nav-about-us" href="about-us.html">About Us</a>
+          </li>
+          <div class="page-nav-spacer"></div>
+        </ul>
+      </div>
+
+      <div class="user-nav">
+        <ul class="user-tabs">
+          <li class="nav-item">
+            <a class="nav-link login" href="login.html">Log in</a>
+          </li>
+          <div class="page-nav-spacer"></div>
+          <li class="nav-item">
+            <a class="nav-link signup" href="signup.html">Sign up</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link form login" href="login.html">Log in</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link form signup" href="signup.html">Sign up</a>
-        </li>
-      </ul>
+    <div class="nav-second-row">
+      <h1 class="nav-brand">EduArtSource</h1>
+      <div class="nav-second-block">
+        <ul class="user-tabs-row-2">
+          <div class="nav-search-group">
+            <span class="iconify go-to-search" data-icon="entypo-magnifying-glass" data-inline="false"></span>
+            <li class="nav-item">
+              <a class=" nav-link search" href="education.html">Search</a>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link donate" href="donate.html">donate</a>
+          </li>
+        </ul>
+      </div>
     </div>
+
   </nav>
   <!-- -------------------------------------------------- NAV _ DESKTOP END -->
 
@@ -120,7 +137,7 @@
               <button type="submit" class="btn btn-block mybtn btn-primary tx-tfm">Login</button>
             </div>
             <div class="have-account">
-              <p class="text-center">Don't have account? <a href="#" id="signup">Sign up here</a></p>
+              <p class="text-center">Don't have an account? <a href="signup.html" id="signup">Sign up here</a></p>
             </div>
           </form>
 
@@ -134,7 +151,10 @@
   <footer>
     <div class="footer">
       <div class="foot-branding">
-        <h1 class="foot-brand">EduArtSource</h1>
+        <div class="foot-brand-container">
+          <img src="images/brand.png" alt="" class="foot-brand-img">
+          <h1 class="foot-brand">EduArtSource</h1>
+        </div>
         <p class="foot-brand-info">EduArtSource is a platform for sharing education resources for design and media arts
           educators.</p>
         <div class='foot-social'>
@@ -146,11 +166,10 @@
       </div>
 
       <div class="foot-nav">
-        <ul class="pages colm-2">
+        <ul class="pages">
           <li><a href="#">For Students</a></li>
-          <li><a href="#">For Educators</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="for-educators.html">For Educators</a></li>
+          <li><a href="about-us.html">About Us</a></li>
         </ul>
       </div>
 
@@ -159,12 +178,13 @@
           <li><a href="#">Support</a></li>
           <li><a href="#">Help & FAQ</a></li>
           <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
 
       <div class="foot-donation">
         <p class="foot-donate-info">EduArtSource relies on the support from educators of design and media arts.</p>
-        <a class="foot-donate" href="#">donate</a>
+        <a class="foot-donate" href="donate.html">donate</a>
       </div>
     </div>
 
