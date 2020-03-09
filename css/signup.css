@@ -689,7 +689,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 100px;
+    height: 80px;
     background: #fefefe;
     z-index: -1;
   }
@@ -759,7 +759,7 @@ h5 {
 
   /* ****************************************** FORM */
   .login-container {
-    margin: 100px auto;
+    margin: 50px auto;
     width: 100%;
   }
 

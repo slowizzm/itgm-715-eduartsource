@@ -818,7 +818,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 100px;
+    height: 80px;
     background: #fefefe;
     z-index: -1;
   }

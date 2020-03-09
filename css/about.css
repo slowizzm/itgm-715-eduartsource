@@ -785,7 +785,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 100px;
+    height: 80px;
     background: #fefefe;
     z-index: -1;
   }
@@ -930,6 +930,7 @@ h5 {
     font-family: "Lato", sans-serif;
     color: #3a3a3a;
     font-weight: bold;
+    width: 40%;
     margin: 20px auto
   }
 
@@ -938,7 +939,7 @@ h5 {
     font-size: 1rem;
     font-family: "Source Sans Pro", sans-serif;
     color: #666666;
-    width: 100%;
+    width: 40%;
     margin: 20px auto
   }
 
@@ -946,7 +947,7 @@ h5 {
     background-color: #339900;
     border: none;
     font-family: "Lato", sans-serif;
-    margin: 20px auto 20px 0
+    margin: 20px auto 20px 500px;
   }
 
   /* ****************************************** FOOTER */

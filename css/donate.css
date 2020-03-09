@@ -502,7 +502,7 @@ label.levels {
 
   /* ****************************************** FORM */
   .login-container {
-    margin: 100px;
+    margin: 50px -25%;
     width: 150%;
   }
 
@@ -759,7 +759,7 @@ label.levels {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 100px;
+    height: 80px;
     background: #fefefe;
     z-index: -1;
   }
@@ -829,7 +829,7 @@ label.levels {
 
   /* ****************************************** FORM */
   .login-container {
-    margin: 100px auto;
+    margin: 50px auto;
     width: 100%;
   }
 
